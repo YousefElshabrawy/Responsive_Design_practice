@@ -1,0 +1,229 @@
+    /* general styles*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Georgia;
+    }
+    
+    .wrapper {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+    }
+    /*nav bar*/
+    
+    header img {
+        margin: 10px 20px;
+    }
+    
+    header nav {
+        float: right;
+    }
+    
+    header nav ul li {
+        float: left;
+        list-style-type: none;
+        margin: 10px 20px;
+    }
+    
+    header nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+    }
+    
+    header nav ul li a:hover {
+        background-color: #f8f8ff;
+        color: black;
+    }
+    /*main banner*/
+    
+    #main-banner {
+        width: 100%;
+        background-color: #f34949;
+    }
+    
+    #main-banner img {
+        width: 100%;
+        border-bottom: 6px solid #f34949;
+    }
+    /*home menu*/
+    
+    #home-menu img {
+        display: block;
+        margin: 0 auto;
+        transition: all .4s ease-in-out;
+    }
+    
+    #home-menu img:hover {
+        transform: scale(1.15);
+    }
+    
+    #home-menu ul {}
+    
+    #home-menu ul li {
+        list-style-type: none;
+        width: 50%;
+        float: left;
+        opacity: .7;
+    }
+    
+    #home-menu ul li:nth-child(odd) {
+        padding: 25px 8% 25px 4%;
+    }
+    
+    #home-menu ul li:nth-child(even) {
+        padding: 25px 4% 25px 8%;
+    }
+    
+    #home-menu ul li h3 {
+        display: inline-block;
+        width: 50%;
+    }
+    
+    #home-menu ul li hr {
+        display: inline-block;
+        width: 30%;
+    }
+    
+    #home-menu ul li p {
+        font-style: italic;
+        opacity: .65;
+    }
+    /*pictures*/
+    
+    .pictures ul {
+        overflow: hidden;
+        margin: 80px 0;
+    }
+    
+    .pictures ul li {
+        width: 25%;
+        padding: 15px;
+        float: left;
+        list-style-type: none;
+    }
+    
+    .pictures ul li span {
+        opacity: .7;
+    }
+    
+    .pictures ul li span:nth-of-type(2) {
+        float: right;
+    }
+    
+    .pictures ul li img {
+        transition: all .25s ease-in-out;
+        width: 100%
+    }
+    
+    .pictures ul li img:hover {
+        transform: scale(.95);
+    }
+    /*footer*/
+    
+    .footer {
+        background-color: #3B3B3B;
+        color: white;
+    }
+    
+    .footer ul {
+        overflow: hidden;
+        padding: 25px;
+        opacity: .8;
+    }
+    
+    .footer ul li {
+        width: 25%;
+        padding: 15px;
+        float: left;
+        list-style-type: none;
+    }
+    
+    .footer ul li::after {
+        content: ;
+        clear: both;
+    }
+    
+    .footer ul li p {
+        margin: 15px;
+    }
+    
+    .footer ul li a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        margin: 15px;
+    }
+    
+    .footer ul li a:hover {
+        color: springgreen;
+    }
+    
+    @media screen and (min-width:481px) and (max-width:768px) {
+        header img {
+            display: block;
+            margin: 20px auto;
+        }
+        header nav {
+            float: none;
+        }
+        header nav ul li {
+            width: 20%;
+            margin: 0 0 20px 0;
+            text-align: center;
+        }
+        #home-menu img {
+            width: 18%;
+        }
+        #home-menu ul li:nth-child(odd) {
+            padding: 25px 4% 25px 4%;
+        }
+        #home-menu ul li:nth-child(even) {
+            padding: 25px 4% 25px 4%;
+        }
+        .pictures ul li {
+            width: 50%;
+            padding: 15px;
+        }
+        .footer ul li {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        header img {
+            display: block;
+            margin: 20px auto;
+        }
+        header nav {
+            float: none;
+        }
+        header nav ul li {
+            float: none;
+            text-align: center;
+            color: #303339;
+            font-style: italic;
+        }
+        #home-menu img {
+            width: 18%;
+        }
+        #home-menu ul li {
+            width: 100%
+        }
+        #home-menu ul li:nth-child(odd) {
+            padding: 25px 4% 25px 4%;
+        }
+        #home-menu ul li:nth-child(even) {
+            padding: 25px 4% 25px 4%;
+        }
+        .pictures ul li {
+            width: 100%;
+            padding: 15px;
+        }
+        .footer ul li {
+            width: 100%;
+        }
+    }

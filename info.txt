@@ -1,0 +1,1 @@
+this is my first responsive practice. i made it using HTML and CSS and media queries.
